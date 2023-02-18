@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
         dragSize: '54.8571rem',
         draggable: true
     },
-    slidesPerView: 4,
+    slidesPerView: 3,
 });
 
 
