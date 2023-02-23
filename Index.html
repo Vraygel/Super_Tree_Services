@@ -15,18 +15,21 @@
     <div class="wrap">
         <div class="nav">
             <div class="nav_hamberger">
+                <div class="hamberger_button"><img src="./img/Gamburger.png" alt=""></div>
                 <input type="checkbox" id="side-checkbox" />
                 <div class="side-panel">
-                    <label class="side-button-2" for="side-checkbox">+</label>
+                    <!-- <label class="side-button-2" for="side-checkbox">+</label> -->
                     <div class="side-title">
                         <div class="nav_logo"></div>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#works">Works</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-    
+                        
+                        <ul >
+                            
+                            <li><a class="close" href="#home">Home</a></li>
+                            <li><a class="close" href="#services">Services</a></li>
+                            <li><a class="close" href="#works">Works</a></li>
+                            <li><a class="close" href="#about">About Us</a></li>
+                            <li><a class="close" href="#contacts">Contacts</a></li>
+                            
                         </ul>
                     </div>
                     
@@ -43,17 +46,22 @@
 
 
                 </div>
-                <div class="side-button-1-wr">
-                    <label class="side-button-1" for="side-checkbox">
-                        <div class="side-b side-open"><img src="./img/Gamburger.png" alt=""></div>
-                        <!-- <div class="side-b side-close">Закрыть</div> -->
-                    </label>
-                </div>
+               
 
 
 
             </div>
-            <div class="nav_logo"></div>
+            <div class="logo_wrap" >
+                <div class="nav_logo">
+                    
+                </div>
+                <div class="h12_wrap">
+                    <h1>SUPER</h1>
+                    <h2>TREE SERVICES</h2>
+                </div>
+            </div>
+                
+            
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -69,7 +77,9 @@
 
                 </div>
                 <div class="WhatsApp_number">
-                    <a href="tel:+19047923244"><span>+1 904 792 32 44</span></a>
+                    
+                    <a href="tel:+19047923244"><img src="./img/phon.png" alt=""></a>
+                    <a class="a" href="tel:+19047923244"><span>+1 904 792 32 44</span></a>
                 </div>
 
             </div>
@@ -104,6 +114,9 @@
                         <input class="input_tg" type="text" name="LastName" placeholder="LastName">
                         <input class="input_tg tel" type="tel" name="tel" id="" placeholder="Phone Number">
                         <input class="input_tg email" type="text" name="email" id="" placeholder="Email adress">
+
+                       <label class="input_tg btn" for="formFile"><span>Upload a photo of a tree</span><img src="./img/foto.png" alt=""></label>
+                       <input class="input_tg foto"  type="file"  name="foto" id="formFile">
                         <input class="input_tg bat" type="submit" value="Send">
                     </form>
                 </div>
@@ -128,7 +141,7 @@
                                 We remove trees with specialized equipment. Trust the professionals</p>
 
                         </div>
-                        <button>Details</button>
+                        <button>Get free quote</button>
 
 
                     </div>
@@ -145,7 +158,7 @@
                                 We will do everything qualitatively and quickly.</p>
                         </div>
 
-                        <button>Details</button>
+                        <button>Get free quote</button>
                     </div>
                 </div>
                 <div class="wrap_services_item">
@@ -162,7 +175,7 @@
                                 when we got there.</p>
                         </div>
 
-                        <button>Details</button>
+                        <button>Get free quote</button>
                     </div>
                 </div>
                 <div class="wrap_services_item">
@@ -183,7 +196,7 @@
                             </p>
                         </div>
 
-                        <button>Details</button>
+                        <button>Get free quote</button>
                     </div>
                 </div>
                 <!-- <div class="wrap_services_item">
@@ -214,7 +227,7 @@
                                 land by clearing and grading it thoroughly. </p>
                         </div>
 
-                        <button>Details</button>
+                        <button>Get free quote</button>
                     </div>
                 </div>
                 <div class="wrap_services_item">
@@ -234,7 +247,7 @@
                             </p>
                         </div>
 
-                        <button>Details</button>
+                        <button>Get free quote</button>
                     </div>
                 </div>
 
@@ -305,11 +318,13 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"><img src="./img/works1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/works2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/works3.png" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/works1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/works4.png" alt=""></div>
+
+                        <div class="swiper-slide"><img class="swiper_img" src="./img/works1.png" alt=""></div>
+                        <div class="swiper-slide"><img class="swiper_img" src="./img/works2.png" alt=""></div>
+                        <div class="swiper-slide"><img class="swiper_img" src="./img/works3.png" alt=""></div>
+                        <div class="swiper-slide"><img class="swiper_img" src="./img/works1.png" alt=""></div>
+                        <div class="swiper-slide"><img class="swiper_img"src="./img/works4.png" alt=""></div>
+
 
                     </div>
 
@@ -346,7 +361,7 @@
                             </div>
                             <div class="contacts_wrap_item">
                                 <h2>Phone:</h2>
-                                <span>904-792-3244</span>
+                                <a href="tel:+19047923244"><span>+1 904-792-3244</span>/a>
                             </div>
                         </div>
                         <div class="wrap_contacts_content">
@@ -374,7 +389,11 @@
                             </div>
                             <div class="contacts_wrap_item">
                                 <h2>Location</h2>
-                                <span>Florida, FL</span>
+                                <span class="desk" >We are located in Jacksonville
+                                    and work within 100-mile radius</span>
+                                <span class="mob" >We are located in Jacksonville
+                                    and work within 100-mile radius</span>
+                                
                             </div>
                         </div>
                     </div>
@@ -401,6 +420,8 @@
                     <input class="input_tg" type="text" name="LastName" placeholder="LastName">
                     <input class="input_tg tel" type="tel" name="tel" id="" placeholder="Phone Number">
                     <input class="input_tg email" type="text" name="email" id="" placeholder="Email adress">
+                    <label class="input_tg btn" for="formFile"><span>Upload a photo of a tree</span><img src="./img/foto.png" alt=""></label>
+                       <input class="input_tg foto"  type="file"  name="foto" id="formFile">
                     <input class="input_tg bat" type="submit" value="Send">
                 </form>
 

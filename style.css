@@ -51,6 +51,9 @@ body {
     background-repeat: no-repeat;
 }
 
+
+
+
 h1,
 h2 {
     margin-block-start: 0;
@@ -81,7 +84,7 @@ h2 {
     background-size: cover;
 }
 
-.nav_hamberger{
+.nav_hamberger {
     display: none;
 }
 
@@ -158,7 +161,7 @@ h2 {
 }
 
 .nav a:visited {
-    color:  #4E4E4E;
+    color: #4E4E4E;
 }
 
 
@@ -208,6 +211,7 @@ h2 {
     font-weight: 400;
     font-size: 22px;
     line-height: 102.5%;
+    color: #848484;
 }
 
 .input_tg:nth-child(even) {
@@ -378,6 +382,7 @@ h2 {
 }
 
 .about_fon h1 {
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -389,6 +394,8 @@ h2 {
 }
 
 .wrap_about {
+    position: relative;
+    z-index: 0;
     display: flex;
     color: #FFFFFF;
     background-image: url(./img/about_fon1.png);
@@ -478,12 +485,28 @@ h2 {
 
 .wrap_works {
     overflow: hidden;
+    position: relative;
+    z-index: 0;
     background-image: url(./img/fon2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+.wrap_works p {
+    position: relative;
+    z-index: 0;
+}
+
+.wrap_works a {
+    position: relative;
+    z-index: 0;
+}
+
+
 .wrap_works h1 {
+    position: relative;
+    z-index: 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -549,6 +572,10 @@ h2 {
     border-radius: 20px;
 }
 
+.mob{
+display: none;
+}
+
 .content_social_item {
     display: flex;
     align-items: center;
@@ -561,9 +588,9 @@ h2 {
     margin-bottom: 44px;
 }
 
-.content_social_item img{
-width: 97px;
-height: 97px;
+.content_social_item img {
+    width: 97px;
+    height: 97px;
 }
 
 .content_social_item:nth-child(even) {
@@ -738,6 +765,15 @@ height: 97px;
     margin-left: 64px;
 
 }
+
+.h12_wrap {
+    display: none;
+}
+
+.WhatsApp_number img{
+    display: none;
+}
+    
 
 .wrap_footer_tel {
     padding-top: 125px;
@@ -988,6 +1024,35 @@ body {
     font-size: 1.5714rem;
 }
 
+.form_tg .foto{
+    display: none;
+}
+
+.form_tg .btn{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 31px;
+}
+
+.form_tg .btn span{
+    color: #848484;
+    width: 100%;
+}
+
+
+
+.input_tg img{
+
+    margin-left: auto;
+}
+
+/* .form_tg .foto file-upload-button{
+    padding: 20px;
+    width: 100%;
+} */
+
+
 .input_tg:nth-child(even) {
     margin-left: 1.8571rem;
 }
@@ -997,6 +1062,10 @@ body {
 }
 
 .input_tg:nth-child(4) {
+    margin-top: 2.1429rem;
+}
+
+.input_tg:nth-child(5) {
     margin-top: 2.1429rem;
 }
 
@@ -1073,9 +1142,11 @@ body {
 }
 
 .services_item_content button {
-    width: 13.2857rem;
+    width: 15.2857rem;
     padding-top: 1.0714rem;
     padding-bottom: 1.0714rem;
+    padding-left: 1.0714rem;
+    padding-right: 1.0714rem;
     border-radius: 1.2857rem;
     font-size: 1.5714rem;
 }
@@ -1193,10 +1264,10 @@ body {
     margin-bottom: 3.1429rem;
 }
 
-.content_social_item img{
+.content_social_item img {
     width: 6.9286rem;
     height: 6.9286rem;
-    }
+}
 
 .content_social_item:nth-child(even) {
     margin-left: 2.8571rem;
@@ -1418,7 +1489,7 @@ body {
     height: 3.9rem;
 }
 
-.form_tg{
+.form_tg {
     margin-top: 2.5rem;
 }
 
@@ -1445,6 +1516,38 @@ body {
 @media (max-width: 1023px) {
 
 
+    .mob{
+        display: block;
+        }
+
+    .desk{
+        display: none;
+    }
+
+    .form_tg .btn{
+        padding-right: 2.24rem;
+    }
+
+    .form_tg .btn img{
+
+        width: 10rem;
+        padding-right: 2.24rem;
+    }
+
+    .zoom{
+        position: relative;
+        overflow: visible;
+        top: 0;
+        /* bottom: 520px; */
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        z-index: 100;
+        transform: scale(1.5);
+        transition: transform 0.25s ease;
+        
+        } 
+
     .fillin_div {
         top: 25.5714rem;
         left: calc(50% - 55.4571rem);
@@ -1466,11 +1569,12 @@ body {
     }
 
 
-    .header_img{
+    .header_img {
         height: 100rem;
     }
 
-    .nav ul, .WhatsApp_img{
+    .nav ul,
+    .WhatsApp_img {
         display: none;
     }
 
@@ -1492,12 +1596,13 @@ body {
 
     .wrap_services {
         padding-left: 10.3571rem;
-        padding-right: 10.3571rem;;
+        padding-right: 10.3571rem;
+        ;
         /* padding: 1.5rem; */
     }
 
     .services_item_content {
-        padding-left:0;
+        padding-left: 0;
         padding-top: 4.7143rem;
     }
 
@@ -1520,9 +1625,11 @@ body {
     }
 
     .services_item_content button {
-        width: 33.2857rem;
+        width: 41.2857rem;
         padding-top: 4.0714rem;
         padding-bottom: 4.0714rem;
+        padding-left: 4.0714rem;
+        padding-right: 4.0714rem;
         border-radius: 2.2857rem;
         font-size: 4.5714rem;
     }
@@ -1531,7 +1638,7 @@ body {
         margin-top: 7rem;
         width: 75%;
         font-size: 5.0714rem;
-    
+
         padding-bottom: 0;
     }
 
@@ -1551,7 +1658,7 @@ body {
         margin-left: 0;
     }
 
-    .about_fon h1{
+    .about_fon h1 {
         font-size: 6.1429rem;
     }
 
@@ -1570,7 +1677,7 @@ body {
         /* margin-left: 2.5rem; */
     }
 
-    .about_reviews_item_conten{
+    .about_reviews_item_conten {
         padding-top: 13rem;
         padding-left: 8rem;
         margin-top: 0;
@@ -1580,7 +1687,7 @@ body {
 
     .about_reviews_item_conten p {
         font-size: 5.7714rem;
-    width: 76.5rem;
+        width: 76.5rem;
 
     }
 
@@ -1597,7 +1704,7 @@ body {
         height: 17.5714rem;
     }
 
-    .wrap_contacts{
+    .wrap_contacts {
         margin: 0 auto;
         /* display: flex; */
     }
@@ -1718,12 +1825,12 @@ body {
         margin-left: auto;
     }
 
-    .form_tg{
+    .form_tg {
         margin-top: 4rem;
         justify-content: space-between;
     }
 
-    .input_tg{
+    .input_tg {
         padding-left: 5rem;
     }
 
@@ -1734,23 +1841,30 @@ body {
     .input_tg:nth-child(3) {
         margin-top: 4.1429rem;
     }
+
     .input_tg:nth-child(4) {
         margin-top: 4.1429rem;
     }
 
+    .input_tg:nth-child(5) {
+        margin-top: 4.1429rem;
+    }
+
     .nav {
-        height: 16rem;
+        height: 25rem;
         font-size: 3.1429rem;
         padding-left: 4.7143rem;
         padding-right: 4.2857rem;
         justify-content: space-between;
     }
 
-    .chat_header img, .chat_header h1, .heading{
+    .chat_header img,
+    .chat_header h1,
+    .heading {
         display: none;
     }
 
-    .wrap_header_chat{
+    .wrap_header_chat {
         position: relative;
         top: -11rem;
         border-radius: 5.5rem;
@@ -1763,15 +1877,16 @@ body {
         align-items: center;
     }
 
-    .wrap_tele_details .wrap_slogan_chat{
+    .wrap_tele_details .wrap_slogan_chat {
         padding-left: 14.1429rem;
         margin-right: auto;
     }
 
-    .nav_hamberger{
+    .nav_hamberger {
         display: block;
     }
-    .nav_hamberger img{
+
+    .nav_hamberger img {
 
         width: 6.8rem;
         height: 4.8rem;
@@ -1780,23 +1895,55 @@ body {
     .nav ul li {
         margin-left: 2.8571rem;
     }
+
+.logo_wrap{
+    display: flex;
+}
+
     .nav_logo {
-        margin-left: 32rem;
+        /* margin-left: 23rem; */
         width: 11.2143rem;
         height: 11.2143rem;
     }
-    .wrap_WhatsApp {
-margin-left: 0;
+    .h12_wrap{
+margin-right: auto;
+display: block;
     }
 
-    .WhatsApp_number{
+    .h12_wrap h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 7rem;
+        line-height: 102.52%;
+        /* or 18px */
+        color: #406750;
+    }
+
+    .h12_wrap h2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 5rem;
+        line-height: 102.52%;
+        /* or 18px */
+        color: #406750;
+    }
+
+    .wrap_WhatsApp {
+        margin-left: 0;
+    }
+
+    .WhatsApp_number {
         background: transparent;
     }
-    
-    .WhatsApp_number a {
-        font-size: 4.1429rem;
-        color: #477259;
+
+    .WhatsApp_number .a {
+        display: none;
+        /* font-size: 4.1429rem;
+        color: #477259; */
     }
+   
 
     .footer {
         flex-wrap: wrap;
@@ -1904,7 +2051,7 @@ margin-left: 0;
     }
 
 
-    .wrap_tele_details{
+    .wrap_tele_details {
         padding-top: 6rem;
         padding-bottom: 6rem;
         padding-left: 0;
@@ -1920,7 +2067,7 @@ margin-left: 0;
     .wrap_tele_details .wrap_slogan_chat h2 {
         font-size: 6.2857rem;
     }
-    
+
     .wrap_tele_details .form_tg {
         flex-direction: column;
         padding-right: 14.1429rem;
@@ -1945,16 +2092,17 @@ margin-left: 0;
 
     .wrap_tele_details .form_tg .bat {
         width: 44.5714rem;
-    height: 12.1429rem;
-    padding: 0.7143rem;
-    border-radius: 2.2857rem;
-    margin-top: 1.4286rem;
-    font-size: 5rem;
+        height: 12.1429rem;
+        padding: 0.7143rem;
+        border-radius: 2.2857rem;
+        margin-top: 1.4286rem;
+        font-size: 5rem;
     }
 
     #side-checkbox {
         display: none;
     }
+
     .side-panel {
         position: fixed;
         z-index: 999999;
@@ -1962,58 +2110,60 @@ margin-left: 0;
         bottom: 0;
         left: -100rem;
         background: #FFFFFF;
-        transition: all 0.5s;   
+        transition: all 0.5s;
         width: 88rem;
         height: 100vh;
-        box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+        box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
         /* color: #FFF; */
-       
+
         padding-left: 5rem;
         padding-top: 10rem;
         padding-right: 5rem;
         padding-bottom: 10rem;
         display: flex;
         flex-direction: column;
-    justify-content: space-between;
+        justify-content: space-between;
     }
+
     .side-title {
         font-size: 20px;
         padding-bottom: 10px;
         margin-bottom: 20px;
-       /* display: flex;
+        /* display: flex;
        justify-content: center; */
-    
+
     }
-    .side-panel ul{
+
+    .side-panel ul {
         display: flex;
         flex-direction: column;
         font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 102.52%;
-text-transform: capitalize;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 102.52%;
+        text-transform: capitalize;
 
     }
 
 
-    .side-panel ul li{
+    .side-panel ul li {
         margin-top: 6rem;
     }
 
-    .side-panel ul a{
+    .side-panel ul a {
         color: #537963;
         border-bottom: 0;
     }
 
-    
 
-    .side-panel ul a:active{
+
+    .side-panel ul a:active {
         color: #000000;
         border-bottom: 0;
     }
 
-    .side-panel ul a:hover{
+    .side-panel ul a:hover {
         color: #000000;
         border-bottom: 0;
     }
@@ -2021,16 +2171,16 @@ text-transform: capitalize;
 
 
 
-    .side-panel .nav_logo{
+    .side-panel .nav_logo {
         margin-left: 0;
     }
 
 
-    .side-panel .chat_header{
+    .side-panel .chat_header {
         display: flex;
     }
 
-    .side-panel .chat_header img{
+    .side-panel .chat_header img {
         display: block;
         width: 7rem;
         height: 7rem;
@@ -2040,39 +2190,45 @@ text-transform: capitalize;
     .side-panel .heading {
         display: block;
         padding-bottom: 0;
-        
+
     }
+
     .side-panel .heading h1 {
         display: block;
         color: #496856;
     }
 
 
-    .side-panel .chat_header h1{
+    .side-panel .chat_header h1 {
         display: block;
         color: #496856;
     }
-    
 
 
-    
+
+
 
     .side-button-1-wr {
-        text-align: center; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+        /* text-align: center; */
+        /* Контейнер для кнопки, чтобы было удобнее ее разместить */
     }
-    
-    .side-button-1 .side-close {
+
+    /* .side-button-1 .side-close {
+        display: none;
+    } */
+
+    #side-checkbox:checked+.side-panel+.side-button-1-wr .side-button-1 .side-open {
         display: none;
     }
-    #side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
-        display: none;
-    }
-    #side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+
+    #side-checkbox:checked+.side-panel+.side-button-1-wr .side-button-1 .side-close {
         display: block;
     }
-    #side-checkbox:checked + .side-panel {
+
+    #side-checkbox:checked+.side-panel {
         left: 0;
     }
+
     /* Оформление кнопки на панеле */
     .side-button-2 {
         font-size: 30px;
@@ -2083,18 +2239,25 @@ text-transform: capitalize;
         right: 8px;
         cursor: pointer;
         transform: rotate(45deg);
-        color: #BFE2FF;    
-        transition: all 280ms ease-in-out;    
+        color: #BFE2FF;
+        transition: all 280ms ease-in-out;
     }
+
     .side-button-2:hover {
-        transform: rotate(45deg) scale(1.1);    
+        transform: rotate(45deg) scale(1.1);
         color: #FFF;
     }
-    
 
 
 
 
+    .WhatsApp_number img{
+        display: block;
+        position: relative;
+        z-index: ;
+        bottom: ;
+    }
+      
 
 
 

@@ -26,7 +26,7 @@ swiper-container {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     list-style: none;
     padding: 0;
     z-index: 1;
@@ -540,12 +540,13 @@ button.swiper-pagination-bullet {
 
 .swiper-horizontal>.swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
-    /* position: absolute; */
-    margin-top: px;
+    position: relative;
+    /* margin-top: px; */
+    /* z-index: 10; */
     left: var(--swiper-scrollbar-sides-offset, 1%);
     bottom: var(--swiper-scrollbar-bottom, 4px);
     top: var(--swiper-scrollbar-top, auto);
-    z-index: 50;
+    z-index: 0;
     height: var(--swiper-scrollbar-size, 11px);
     border-radius: 10px;
     width: 99rem;
@@ -558,7 +559,7 @@ button.swiper-pagination-bullet {
     left: var(--swiper-scrollbar-left, auto);
     right: var(--swiper-scrollbar-right, 4px);
     top: var(--swiper-scrollbar-sides-offset, 1%);
-    z-index: 50;
+    z-index: 0;
     border-radius: 10px;
     width: 1386px;
     margin: 0 auto;
